@@ -1,0 +1,153 @@
+/* design height- 1708px */
+
+@font-face {
+    font-family: "Young Serif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: min(100vw,46rem);
+    height: fit-content;
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media screen and (min-width:46rem) {
+    main {
+        margin: 7.75rem 0 7.75rem 0;
+    }
+}
+
+div {
+    padding-left: min(8.8vw, 2.5rem);
+    padding-right: min(8.8vw, 2.5rem);
+}
+
+img {
+    width: min(100vw, 41rem);
+    justify-self: center;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:46rem) {
+    img {
+        margin-top: 2.5rem;
+    }   
+}
+
+ul, ol {
+    margin: 0px 24px 0px 24px;
+}
+
+span {
+    position: relative;
+    left: 10px;
+}
+
+li + li {
+    margin-top: 1rem;
+}
+
+h3 + li {
+    margin-right: min(4.875rem, 22.5rem);
+}
+
+li {
+    font-family: "Outfit";
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-family: "Outfit";
+}
+
+ol li { 
+    margin-top: 0.75rem;
+}
+
+h3 {
+    font-family: "Outfit";
+}
+
+h1 {
+    font-family: "Young Serif";
+    font-size: 2rem;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+    margin-top: 2.625rem;
+}
+
+h2 {
+    font-family: "Young Serif";
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1.25rem;
+    margin-top: 1.875rem;
+}
+
+#preparation {
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+    width: min(82.7vw, 41rem);
+    display: grid;
+    justify-self: center;
+    border-radius: 10px;
+    margin-top: 1.875rem;
+    padding: 1.625rem;
+    row-gap: 1.25rem;
+}
+
+#ingredients, #instructions {
+    border-bottom: 1px solid lightgray;
+    margin: 0px 35px 0px 35px;
+    padding: 0px 0px 36px 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0 1.25rem 0;
+    border-spacing: 1rem;
+}
+
+
+tr {
+    border-bottom: 1px solid lightgray;
+    text-indent: 2rem;
+}
+
+td {
+    padding: 1rem 0 1rem 0;
+}
+
+td:nth-of-type(2) {
+    color: hsl(14, 45%, 36%);
+}
+
+tr:last-of-type {
+    border-bottom: none;
+}
